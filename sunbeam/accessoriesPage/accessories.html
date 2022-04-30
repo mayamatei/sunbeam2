@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="acces.css" />
+  <title>Extra accessories</title>
+</head>
+
+<body>
+  <nav>
+    <div class="logo-container">
+      <a href="/index.html">
+        <h4>SunBeam Cars Inc.</h4>
+      </a>
+    </div>
+    <div class="profile-container">
+      <a href="/about.html">
+        <h4>About us</h4>
+      </a>
+    </div>
+  </nav>
+  <section class="logosection">
+    <main>
+      <section class="left-side-info">
+        <div class="info-container">
+          <h1 class="info-title">Good choice!</h1>
+          <h3 id="car-name">Car: Audi Q5</h3>
+          <ul>
+            <li id="date-start"></li>
+            <li id="date-end">Return date: 2022-02-02</li>
+            <li id="rental-days">Rental days: 4</li>
+          </ul>
+          <div class="rental-cost-wrapper">
+            <span>Rental Cost:</span>
+            <h3 id="rental-cost">Car rental cost: 142321 kr.</h3>
+          </div>
+        </div>
+      </section>
+      <section class="accessories">
+        <div class="accessories-container">
+          <h2>Extra Accessories (excl. VAT)</h2>
+          <form id="form">
+            <div class="accesory">
+
+              <input type="checkbox" data-item="Second driver" class="checkList" value="199.00"
+                onchange="calculateTotal(this, this.value)" />
+              <p>Second driver dkr. 199.00</p>
+            </div>
+            <div class="accesory">
+
+              <input type="checkbox" data-item="Child seat (5-12)" class="checkList" value="155.00"
+                onchange="calculateTotal(this, this.value)" />
+              <p>Child seat (5-12) dkr. 155.00</p>
+            </div>
+            <div class="accesory">
+
+              <input type="checkbox" data-item="Roadside aid" class="checkList" value="120.00"
+                onchange="calculateTotal(this, this.value)" />
+              <p>Roadside aid dkr. 120.00</p>
+            </div>
+            <div class="accesory">
+
+              <input type="checkbox" data-item="Baby seat (0-1)" class="checkList" value="100.00"
+                onchange="calculateTotal(this, this.value)" />
+              <p>Baby seat (0-1) dkr. 100.00</p>
+            </div>
+            <div class="accesory">
+
+              <input type="checkbox" data-item="Child seat (1-4)" class="checkList" value="140.00"
+                onchange="calculateTotal(this, this.value)" />
+              <p>Child seat (1-4) dkr. 140.00</p>
+            </div>
+            <div class="accesory">
+
+              <input type="checkbox" data-item="GPS Navigation" class="checkList" value="250.00"
+                onchange="calculateTotal(this, this.value)" />
+              <p>GPS Navigation dkr. 250.00</p>
+            </div>
+            <div class="accesory">
+
+              <input type="checkbox" data-item="Snow chains" class="checkList" value="188.00"
+                onchange="calculateTotal(this, this.value)" />
+              <p>Snow chains dkr. 188.00</p>
+            </div>
+            <button type="submit">Continue</button>
+          </form>
+        </div>
+      </section>
+      <section class="right-side-info">
+        <div class="right-wrapper">
+          <div class="right-info-container">
+            <p>All inclusive</p>
+            <h3 id="total-cost">
+              </h2>
+              <p>incl. VAT</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </section>
+  <script src="acces.js"></script>
+</body>
+
+</html>

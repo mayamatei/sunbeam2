@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../assets/background\ cars.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  color: white;
+}
+
+nav {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(255, 0, 0);
+  background-color: rgb(255, 255, 255);
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container a{
+  font-size: 40px;
+  margin-left: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(255, 0, 0);
+  text-shadow: 3px 3px #000000;
+}
+.logo-container a:hover{
+  color: rgb(0, 0, 0);
+}
+.company-logo {
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
+  cursor: pointer;
+  animation: spin 4s linear infinite;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.profile-container a {
+  font-size: 30px;
+  cursor: pointer;
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+  text-shadow: 3px 3px #000000;
+
+}
+.profile-container a:hover{
+  color:rgb(0, 0, 0)
+}
+.profile-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.receipt-section {
+  height: 90vh;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.receipt-container {
+  height: 70%;
+  width: 70%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(255, 255, 255);
+  border-radius: 25px;
+}
+
+.receipt-container h1 {
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(255, 255, 255);
+
+}
+
+#print-btn {
+  width: 160px;
+  height: 40px;
+  background-color: rgb(0, 0, 0);
+  border: 1px solid rgb(255, 0, 0);
+  border-radius: 10px;
+  align-self: center;
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+#print-btn:hover {
+  transform: scale(1.2);
+}
+
+#customer-info p {
+  padding: 3px 0px;
+}
+
+
+.rental-information {
+  height: 90vh;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rental-container {
+  height: 70%;
+  width: 70%;
+  background-color: rgb(0, 0, 0);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+  font-family: 'Poppins', sans-serif;
+  border-radius: 25px;
+}
+.rental-container h1 {
+  font-size: 30px;
+  align-self: center;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.rental-cost-all {
+  margin-left: 20px;
+}
+
+.rental-cost-all p {
+  color: rgb(255, 0, 0);
+  font-family: 'Poppins', sans-serif;
+}
+
+.rental-date-car {
+  margin-left: 20px;
+}
+
+.rental-car-cost {
+  margin-left: 20px;
+}
+
+.rental-car-cost p {
+  color: rgb(255, 0, 0);
+  font-family: 'Poppins', sans-serif;
+}
+
+.accessories-cost {
+  margin-left: 20px;
+}
+
+.accessories-cost p {
+  color: rgb(255, 0, 0);
+  font-family: 'Poppins', sans-serif;
+}

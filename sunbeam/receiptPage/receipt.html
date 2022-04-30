@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./receipt.css" />
+    <title>Receipt</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo-container">
+        <h4><a href="../index.html">SunBeam Cars Inc.</a></h4>
+      </div>
+      <div class="profile-container">
+        <h4><a href="../about.html">About us</a></h4>
+      </div>
+    </nav>
+
+    <main>
+      <section class="receipt-section">
+        <div class="receipt-container">
+          <h1>Thank you! Your car will be ready soon.</h1>
+          <h4>Today: <span id="current-date"></span></h4>
+          <div id="customer-info">
+            <p id="first-name"></p>
+            <p id="last-name"></p>
+            <p id="adress-name"></p>
+            <p id="city-code-name"></p>
+          </div>
+          <button id="print-btn">Print</button>
+        </div>
+      </section>
+      <section class="rental-information">
+        <div class="rental-container">
+          <h1>Rental Information</h1>
+          <div class="rental-cost-all">
+            <p>All inclusive</p>
+            <h3 id="total-cost"></h2>
+            <p>incl. VAT</p>
+          </div>
+          <div class="rental-date-car">
+              <h4 id="car-name"></h4>
+              <p id="date-start"></p>
+              <p id="date-end"></p>
+              <p id="rental-days"></p>
+          </div>
+          <div class="rental-car-cost">
+              <h4 id="rental-car-cost"></h4>
+              <p>incl. VAT</p>
+          </div>
+          <div class="accessories">
+              <ul id="list-accessories">
+                  
+              </ul>
+          </div>
+          <div class="accessories-cost">
+              <h4 id="accessories-cost"></h4>
+              <p>incl. VAT</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./receipt.js"></script>
+  </body>
+</html>

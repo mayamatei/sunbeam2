@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+  <title>Rent a car . SunBeam Car Inc.</title>
+</head>
+
+<body>
+  <nav>
+    <div class="logo-container">
+      <a href="index.html">
+        <h4>SunBeam Cars Inc.</h4>
+      </a>
+    </div>
+    <div class="profile-container">
+      <a href="about.html">
+        <h4>About us</h4>
+      </a>
+    </div>
+  </nav>
+
+  <section class="herobox">
+    <div class="form-container">
+      <h2 class="form-title">Find the car that suits you.</h2>
+      <form class="form" id="form">
+        <div class="cols-container">
+          <div class="first-col">
+            <label for="date-start">Pick up date:</label>
+            <input type="date" id="date-start" name="date-start" />
+            <label for="num-of-persons">Number of people:</label>
+            <input type="number" id="num-of-persons" name="num-of-persons" placeholder="Number of persons..."
+              required />
+          </div>
+          <div class="second-col">
+            <label for="date-end">Hand in date:</label>
+            <input type="date" id="date-end" name="date-end" required />
+            <label for="num-suitcases">Number of suitcases:</label>
+            <select name="num-suitcases" id="num-suitcases">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="More">More</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="search-btn" id="search-btn">
+          <a>Search</a>
+        </button>
+      </form>
+
+    </div>
+  </section>
+
+  <main>
+    <section class="cars"></section>
+
+    <template class="car-output">
+      <div class="first-car" id="car-box">
+        <img class="car-one-logo" id="car-logo" alt="car-image" />
+        <p class="car-name" id="car-name"></p>
+        <div>
+          <p id="car-category"></p>
+          <p id="car-persons"></p>
+          <p id="car-suitcases"></p>
+        </div>
+        <div>
+          <p id="car-price"></p>
+          <button class="book-car-btn" id="car-book-btn">
+            <a href="./accessoriesPage/accessories.html">Book Now</a>
+          </button>
+        </div>
+      </div>
+    </template>
+  </main>
+  <script type="module" src="./app.js"></script>
+  <script type="module" src="GLTFLoader.js"></script>
+  <script type="module" src="OrbitControls.js"></script>
+</body>
+
+</html>

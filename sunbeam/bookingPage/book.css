@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  
+  background-position: center;
+  background-size: cover;
+  color: rgb(255, 0, 0);
+}
+
+nav {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(255, 0, 0);
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container a {
+  font-size: 40px;
+  margin-left: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  color:rgb(255, 0, 0);
+  text-shadow: 3px 3px #000000;
+}
+.logo-container a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.company-logo {
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
+  cursor: pointer;
+  animation: spin 4s linear infinite;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.profile-container a {
+  font-size: 30px;
+  cursor: pointer;
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+  text-shadow: 3px 3px #000000;
+  
+}
+.profile-container a:hover{
+  color: rgb(0, 0, 0);
+}
+
+.profile-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  background-image: url("../assets/background\ cars.jpeg");
+  background-size: cover;
+    background-position: center;
+}
+
+.info-customer {
+  height: 90vh;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-container {
+  width: 70%;
+  height: 70%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(255, 255, 255);
+  border-radius: 25px;
+}
+
+.info-container h1 {
+  text-align: center;
+  height: 20%;
+  margin-top: 20px;
+  font-size: 30px;
+  
+}
+
+.cols-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  width: 100%;
+}
+
+.left-side {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  margin-left: 20px;
+}
+
+.left-side input {
+  margin: 5px 0px 20px 0px;
+  padding-left: 5px;
+  border-radius: 10px;
+  height: 25px;
+  border: 2px solid rgb(255, 0, 0);
+}
+
+.left-side label {
+  padding-left: 5px;
+}
+
+.left-side select {
+  margin: 5px 0px 20px 0px;
+  padding: 5;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 25px;
+  width: 150px;
+  border: 2px solid rgb(255, 0, 0);
+}
+
+.right-side {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  margin-left: 20px;
+}
+
+.right-side input {
+  margin: 5px 0px 20px 0px;
+  padding-left: 5px;
+  border-radius: 10px;
+  height: 25px;
+  border: 2px solid rgb(255, 0, 0);
+}
+
+.right-side label {
+  padding-left: 5px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form button {
+  width: 140px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid rgb(255, 0, 0);
+  font-size: 20px;
+   font-family: 'Poppins', sans-serif;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  align-self: center;
+  margin-top: 30px;
+ 
+}
+
+form button:hover {
+  transform: scale(1.2);
+}
+
+.rental-information {
+  height: 90vh;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rental-container {
+  width: 70%;
+  height: 70%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+.rental-container h1 {
+  align-self: center;
+
+}
+
+.rental-cost-all {
+  margin: 10px 0px 10px 20px;
+}
+
+.rental-date-car {
+  margin: 10px 0px 10px 20px;
+}
+
+.rental-car-cost {
+  margin: 10px 0px 10px 20px;
+}
+
+.accessories {
+  margin: 10px 0px 10px 20px;
+}
+
+.accessories-cost {
+  margin: 10px 0px 10px 20px;
+}
